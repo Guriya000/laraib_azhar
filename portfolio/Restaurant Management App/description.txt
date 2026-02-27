@@ -1,0 +1,53 @@
+Flutter-Based Restaurant Management Desktop Application
+
+Developed a fully functional Restaurant Management Desktop Application using Flutter, implementing GetX for state management and MVC (Model-View-Controller) architecture to ensure clean, scalable, and maintainable code structure.
+
+Project Overview
+
+The application is designed to streamline restaurant operations by managing orders, billing, cash registers, and administrative controls in an efficient offline environment.
+
+Key Features
+
+Order management system (create, update, and track orders)
+
+Dynamic receipt generation with customizable restaurant details
+
+Cash register module for daily sales tracking
+
+Product/category management
+
+Real-time UI updates using GetX reactive state management
+
+Offline data storage using local database (SQFlite)
+
+Structured MVC architecture for better code organization
+
+Responsive desktop UI optimized for large screens
+
+Role-based system (Admin / Super Admin ready structure)
+
+Technical Implementation
+
+Framework: Flutter (Desktop)
+
+State Management: GetX
+
+Architecture Pattern: MVC
+
+Database: SQFlite (Offline storage)
+
+API Ready Structure: Designed to support future backend integration
+
+UI/UX: Clean and professional interface focused on usability
+
+Development Highlights
+
+Implemented modular and reusable components
+
+Optimized state updates for performance efficiency
+
+Designed scalable folder structure following MVC principles
+
+Ensured maintainability and future expansion capability
+
+This project demonstrates strong understanding of desktop application development, state management, structured architecture, and real-world business logic implementation.

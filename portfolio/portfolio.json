@@ -69,6 +69,21 @@
         "WhatsApp Image 2026-01-21 at 5.55.36 PM (1).jpeg",
         "WhatsApp Image 2026-01-21 at 5.55.37 PM.jpeg"
       ]
+    },
+    {
+      "id": "restaurant-management-app",
+      "title": "Restaurant Management App",
+      "folder": "Restaurant Management App",
+      "descriptionFile": "description.txt",
+      "images": [
+        "k1.PNG",
+        "k2.PNG",
+        "k3.PNG",
+        "k4.PNG",
+        "k5.PNG",
+        "k6.PNG",
+        "k8.PNG"
+      ]
     }
   ]
 }
