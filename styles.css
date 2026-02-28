@@ -9,16 +9,30 @@
     --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     --font-display: "Plus Jakarta Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 
-    /* Professional Image Palette */
+    /* Professional & Aesthetic Palette */
     --primary: #005AD9;
+    --primary-light: #4f91ff;
     --primary-dark: #0044A6;
+    --accent: #6366f1;
+    /* Vibrant Indigo */
+    --accent-light: #a5b4fc;
+
+    --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    --gradient-soft: linear-gradient(135deg, rgba(0, 90, 217, 0.05) 0%, rgba(99, 102, 241, 0.05) 100%);
+
     --text-primary: #121212;
     --text-secondary: #555555;
     --text-light: #888888;
     --bg-white: #ffffff;
     --border-light: rgba(0, 90, 217, 0.1);
 
-    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --glow-primary: 0 0 20px rgba(0, 90, 217, 0.15);
+    --glow-accent: 0 0 20px rgba(99, 102, 241, 0.15);
+
+    --glass-bg: rgba(255, 255, 255, 0.8);
+    --glass-border: rgba(255, 255, 255, 0.5);
+
+    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 html {
@@ -51,18 +65,26 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: radial-gradient(var(--primary) 1.5px, transparent 1.5px);
+    background-image: radial-gradient(var(--accent) 1px, transparent 1px);
     background-size: 30px 30px;
-    opacity: 0.1;
+    opacity: 0.15;
 }
 
 .hero-shape-overlay {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, transparent 40%, rgba(0, 90, 217, 0.05) 41%, transparent 42%);
+    top: -10%;
+    right: -10%;
+    width: 80%;
+    height: 120%;
+    background: radial-gradient(circle at 100% 0%, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+    z-index: -1;
+}
+
+.image-bg-decor::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, transparent 40%, rgba(0, 90, 217, 0.03) 41%, transparent 42%);
     background-size: 200% 200%;
 }
 
@@ -100,32 +122,34 @@ h3,
     padding: 0 20px;
 }
 
-/* Slim Navigation */
+/* Slim Navigation with Glass Style */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--bg-white);
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     z-index: 1000;
     padding: 1.2rem 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 90, 217, 0.05);
     transition: var(--transition);
 }
 
 .navbar.scrolled {
     padding: 0.8rem 0;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 20px rgba(0, 90, 217, 0.08);
 }
 
 .nav-brand {
     font-size: 1.2rem;
     font-weight: 800;
-    color: var(--primary);
-    letter-spacing: 0.05em;
-    background: var(--primary);
+    background: var(--gradient-primary);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    letter-spacing: 0.05em;
 }
 
 .nav-menu {
@@ -331,6 +355,19 @@ h3,
     background: #fcfcfc;
 }
 
+.hero-title-main {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+}
+
 .section-title {
     font-size: 2.2rem;
     font-weight: 800;
@@ -424,8 +461,8 @@ h3,
 .experience-card:hover,
 .cert-card:hover {
     transform: translateY(-8px);
-    border-color: var(--primary);
-    box-shadow: 0 15px 45px rgba(0, 90, 217, 0.1);
+    border-color: var(--accent-light);
+    box-shadow: 0 15px 45px rgba(99, 102, 241, 0.1);
 }
 
 .card-icon,
@@ -433,13 +470,14 @@ h3,
     width: 60px;
     height: 60px;
     margin: 0 auto 1.5rem;
-    background: rgba(0, 90, 217, 0.05);
+    background: var(--gradient-soft);
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    color: var(--primary);
+    color: var(--accent);
+    border: 1px solid rgba(99, 102, 241, 0.1);
 }
 
 .experience-card::before {
@@ -969,6 +1007,20 @@ body.modal-open {
     background: var(--primary);
     color: #fff;
     transform: translateY(-3px);
+}
+
+.btn-outline {
+    border: 1px solid var(--border-light);
+    color: var(--text-secondary);
+    background: var(--bg-white);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.btn-outline:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: var(--glow-accent);
 }
 
 /* Footer */
