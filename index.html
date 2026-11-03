@@ -1,325 +1,341 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Laraib Azhar - Flutter Developer Portfolio">
-    <title>Laraib Azhar | Flutter Developer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="manifest" href="manifest.json">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300..800&family=Space+Grotesk:wght@400..700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Laraib Azhar is a Flutter and website developer building polished digital experiences for mobile and web.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Laraib Azhar — Flutter &amp; Website Developer</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="compiled.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="nav-brand">LARAIB AZHAR</div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+  <div class="bubble-field" aria-hidden="true">
+    <span class="bubble bubble-amber"></span>
+    <span class="bubble bubble-sky"></span>
+    <span class="bubble bubble-lilac"></span>
+    <span class="bubble bubble-mint"></span>
+    <span class="bubble bubble-coral"></span>
+    <span class="bubble bubble-blue"></span>
+    <span class="bubble bubble-amber"></span>
+    <span class="bubble bubble-mint"></span>
+    <span class="bubble bubble-sky"></span>
+    <span class="bubble bubble-lilac"></span>
+    <span class="bubble bubble-coral"></span>
+    <span class="bubble bubble-blue"></span>
+  </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="brand transition-transform duration-300 hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-600 motion-reduce:transition-none" href="#top" aria-label="Laraib Azhar, home">
+        <span class="brand-mark">LA</span>
+        <span class="brand-name">Laraib Azhar<span class="brand-period">.</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation">
+        <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="menu-label" aria-hidden="true">Menu</span>
+      </button>
+      <ul class="nav-links" id="primary-navigation">
+        <li><a class="nav-link transition-all duration-200 hover:-translate-y-0.5 motion-reduce:transition-none" href="#about">About</a></li>
+        <li><a class="nav-link transition-all duration-200 hover:-translate-y-0.5 motion-reduce:transition-none" href="#experience">Experience</a></li>
+        <li><a class="nav-link transition-all duration-200 hover:-translate-y-0.5 motion-reduce:transition-none" href="#skills">Skills</a></li>
+        <li><a class="nav-link transition-all duration-200 hover:-translate-y-0.5 motion-reduce:transition-none" href="#projects">Projects</a></li>
+        <li><a class="nav-link transition-all duration-200 hover:-translate-y-0.5 motion-reduce:transition-none" href="#certifications">Certifications</a></li>
+        <li><a class="nav-link transition-all duration-200 hover:-translate-y-0.5 motion-reduce:transition-none" href="#contact">Contact</a></li>
+        <li><a class="nav-resume transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-600 active:translate-y-0 motion-reduce:transition-none" href="assets/cv/Laraib-Azhar-CV.png" download="Laraib-Azhar-CV.png">Download CV <span aria-hidden="true">↗</span></a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="image-bg-decor">
-            <div class="hero-dots"></div>
-            <div class="hero-shape-overlay"></div>
+  <main id="main">
+    <section class="hero section-wrap" id="home" aria-labelledby="hero-title">
+      <figure class="hero-portrait">
+        <img src="assets/cv/rabi-cutout.png" alt="Portrait of Laraib Azhar" width="754" height="1109" fetchpriority="high">
+      </figure>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Available for remote opportunities</p>
+        <h1 id="hero-title">Thoughtful apps.<br><span>Made for people.</span></h1>
+        <p class="hero-role">Flutter &amp; Website Developer <span aria-hidden="true">·</span> Mobile &amp; Web</p>
+        <p class="hero-intro">I’m Laraib, a developer with 1.5+ years of experience building high-performance Android and iOS apps, alongside websites crafted with HTML, CSS, and JavaScript. I turn practical ideas into clear, reliable digital experiences.</p>
+        <div class="hero-actions">
+          <a class="button button-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-600 active:translate-y-0 motion-reduce:transition-none" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+          <a class="button button-secondary transition-all duration-300 hover:-translate-y-1 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-600 active:translate-y-0 motion-reduce:transition-none" href="assets/cv/Laraib-Azhar-CV.png" download="Laraib-Azhar-CV.png">Download CV <span aria-hidden="true">↓</span></a>
         </div>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title-main">MOBILE APPLICATION<br>DEVELOPMENT</h1>
-                <p class="hero-subtext">Is the need of the world finds itself intricately connected to the amazing mesh
-                    of web. We offer more acquirable results and solutions for use in a variety of businesses,
-                    encountering problems in mobile applications technology.</p>
-                <div class="hero-buttons">
-                    <a href="#portfolio" class="btn btn-outline">VIEW PROFILE</a>
-                </div>
-            </div>
+        <div class="hero-contact">
+          <span>Based in Rawalpindi, Pakistan</span>
+          <a href="mailto:laraibazhar107@gmail.com">laraibazhar107@gmail.com</a>
         </div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I am an experienced Flutter developer with complete knowledge of Flutter and Node.js. I've grip
-                        on State management techniques, UI designing, Database and API integration. My aim is to develop
-                        responsive Apps with interactive designs.</p>
-                    <div class="about-info">
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Rawalpindi, Pakistan</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>laraibazhar107@gmail.com</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <aside class="hero-card transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl motion-reduce:transition-none" aria-label="Professional summary">
+      <div class="hero-card-top"><span>Mobile &amp; website developer</span><span class="hero-card-index">01 / 03</span></div>
+      <div class="hero-monogram" aria-hidden="true">LA<span>.</span></div>
+      <p class="hero-card-note">Flutter · Web · Android · iOS</p>
+      <div class="hero-card-bottom">
+        <span>Building for the<br>details that matter.</span>
+        <span class="hero-card-arrow" aria-hidden="true">↗</span>
+      </div>
+    </aside>
+
+    <section class="section section-about section-wrap" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="eyebrow">01 — A little about me</p>
+        <h2 id="about-title">Good software should feel<br>simple to use.</h2>
+      </div>
+      <div class="about-copy">
+        <p>I’m a self-motivated, detail-driven developer who enjoys building thoughtful applications and websites for real-world needs. My work spans Flutter mobile and desktop development, as well as web interfaces built with HTML, CSS, and JavaScript.</p>
+        <p>I care about clean implementation, dependable performance, and the small details that make a digital experience feel natural. I’m ready to bring that approach to a remote team.</p>
+        <a class="text-link" href="mailto:laraibazhar107@gmail.com">Let’s start a conversation <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="impact-strip" aria-label="Experience highlights">
+        <div class="impact-item transition-transform duration-300 hover:-translate-y-1 motion-reduce:transition-none"><strong>1.5<span>+</span></strong><span>years of experience</span></div>
+        <div class="impact-item transition-transform duration-300 hover:-translate-y-1 motion-reduce:transition-none"><strong>25<span>+</span></strong><span>Android &amp; iOS apps</span></div>
+        <div class="impact-item transition-transform duration-300 hover:-translate-y-1 motion-reduce:transition-none"><strong>40<span>%</span></strong><span>faster API response time</span></div>
+      </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Masters of Information Technology</h3>
-                        <span class="timeline-date">2021 - 2023</span>
-                        <p>Advanced studies in Information Technology</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Associate Degree Program (IT)</h3>
-                        <span class="timeline-date">2017 - 2019</span>
-                        <p>Foundation in Information Technology</p>
-                    </div>
-                </div>
-            </div>
+    <section class="section section-tint" id="experience" aria-labelledby="experience-title">
+      <div class="section-wrap">
+        <div class="section-heading section-heading-row">
+          <div><p class="eyebrow">02 — Where I’ve worked</p><h2 id="experience-title">Experience</h2></div>
+          <p class="section-aside">A steady focus on practical, well-crafted application development.</p>
         </div>
+        <div class="experience-list">
+          <article class="experience-item transition-colors duration-300 hover:bg-white/60 motion-reduce:transition-none">
+            <div class="experience-date">Oct 2025 — Jul 2026</div>
+            <div class="experience-detail">
+              <div class="experience-title-row"><h3>Mobile / Desktop App Developer</h3><span class="experience-type">Full-time</span></div>
+              <p class="experience-company">WholeCure Technologies</p>
+              <ul>
+                <li>Integrated Firebase services and a Stripe payment gateway.</li>
+                <li>Implemented real-time communication using WebSockets.</li>
+                <li>Reduced API response time by 40% and delivered quality code to tight deadlines.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="experience-item transition-colors duration-300 hover:bg-white/60 motion-reduce:transition-none">
+            <div class="experience-date">Jan 2025 — Aug 2025</div>
+            <div class="experience-detail">
+              <div class="experience-title-row"><h3>Flutter Developer (Contract)</h3><span class="experience-type">Contract</span></div>
+              <p class="experience-company">Codifying Tech</p>
+              <ul>
+                <li>Used GetX and BLoC for efficient application state management.</li>
+                <li>Integrated REST APIs and databases, working closely with cross-functional teams.</li>
+                <li>Improved app performance and user experience.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="experience-item transition-colors duration-300 hover:bg-white/60 motion-reduce:transition-none">
+            <div class="experience-date">Sep 2024 — Dec 2024</div>
+            <div class="experience-detail">
+              <div class="experience-title-row"><h3>Flutter Developer Intern</h3><span class="experience-type">Internship</span></div>
+              <p class="experience-company">DevtriCode</p>
+              <ul>
+                <li>Gained hands-on experience in Flutter application development.</li>
+                <li>Contributed to project components and learned industry coding standards.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="experience-grid">
-                <div class="experience-card">
-                    <div class="card-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Flutter App Development</h3>
-                    <span class="experience-role">Freelancing</span>
-                    <span class="experience-date">2024 - Present</span>
-                    <p>Developing mobile applications using Flutter framework, focusing on responsive design and user
-                        experience.</p>
-                </div>
-                <div class="experience-card">
-                    <div class="card-icon">
-                        <i class="fas fa-chalkboard-teacher"></i>
-                    </div>
-                    <h3>Tutor</h3>
-                    <span class="experience-role">Computer Science | Mathematics</span>
-                    <span class="experience-date">2019 - Present</span>
-                    <p>Teaching Computer Science and Mathematics, helping students understand complex concepts and
-                        develop problem-solving skills.</p>
-                </div>
-            </div>
-        </div>
+    <section class="section section-wrap" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading section-heading-row">
+        <div><p class="eyebrow">03 — What I work with</p><h2 id="skills-title">Skills &amp; tools</h2></div>
+        <p class="section-aside">Flutter is my primary skill, supported by web development and a practical mobile-app toolkit.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-group skill-group-primary transition-all duration-300 hover:-translate-y-1 hover:rounded-xl hover:bg-white hover:shadow-md motion-reduce:transition-none"><span class="skill-number">01</span><div><h3>Flutter development <span class="skill-primary-label">Primary skill</span></h3><ul class="skill-tags"><li class="skill-tag-primary">Flutter</li><li>Dart</li><li>Android</li><li>iOS</li></ul></div></article>
+        <article class="skill-group transition-all duration-300 hover:-translate-y-1 hover:rounded-xl hover:bg-white hover:shadow-md motion-reduce:transition-none"><span class="skill-number">02</span><div><h3>State management</h3><ul class="skill-tags"><li>BLoC</li><li>GetX</li></ul></div></article>
+        <article class="skill-group transition-all duration-300 hover:-translate-y-1 hover:rounded-xl hover:bg-white hover:shadow-md motion-reduce:transition-none"><span class="skill-number">03</span><div><h3>Backend &amp; APIs</h3><ul class="skill-tags"><li>REST APIs</li><li>Firebase</li></ul></div></article>
+        <article class="skill-group transition-all duration-300 hover:-translate-y-1 hover:rounded-xl hover:bg-white hover:shadow-md motion-reduce:transition-none"><span class="skill-number">04</span><div><h3>Databases</h3><ul class="skill-tags"><li>Firebase Firestore</li><li>Cloud Firestore</li><li>SQLite</li><li>Hive</li></ul></div></article>
+        <article class="skill-group transition-all duration-300 hover:-translate-y-1 hover:rounded-xl hover:bg-white hover:shadow-md motion-reduce:transition-none"><span class="skill-number">05</span><div><h3>Web development</h3><ul class="skill-tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></div></article>
+        <article class="skill-group transition-all duration-300 hover:-translate-y-1 hover:rounded-xl hover:bg-white hover:shadow-md motion-reduce:transition-none"><span class="skill-number">06</span><div><h3>Tools &amp; services</h3><ul class="skill-tags"><li>Git</li><li>GitHub</li><li>Stripe</li><li>Node.js</li><li>Express.js</li></ul></div></article>
+        <article class="skill-group transition-all duration-300 hover:-translate-y-1 hover:rounded-xl hover:bg-white hover:shadow-md motion-reduce:transition-none"><span class="skill-number">07</span><div><h3>Languages</h3><ul class="skill-tags"><li>English</li><li>Urdu</li><li>Hindi</li></ul></div></article>
+      </div>
     </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <div class="certifications-grid">
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>Certificate of Achievement</h3>
-                    <span class="cert-subject">Software Engineering</span>
-                    <span class="cert-date">January 2026</span>
-                    <p class="cert-institute">The Saylor Academy</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>App Development Internship</h3>
-                    <span class="cert-subject">Flutter</span>
-                    <span class="cert-date">August 2025</span>
-                    <p class="cert-institute">Code Sentinel</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>Certificate of Completion</h3>
-                    <span class="cert-subject">Flutter</span>
-                    <span class="cert-date">January 2025</span>
-                    <p class="cert-institute">ehunar.org</p>
-                </div>
-            </div>
+    <section class="section section-tint" id="projects" aria-labelledby="projects-title">
+      <div class="section-wrap">
+        <div class="section-heading section-heading-row">
+          <div><p class="eyebrow">04 — Selected work</p><h2 id="projects-title">Projects with purpose.</h2></div>
+          <p class="section-aside">Mobile apps and browser-based tools built for practical everyday needs.</p>
         </div>
+        <div class="projects-grid">
+          <article class="project-card group transition-transform duration-300 hover:-translate-y-1 motion-reduce:transition-none">
+            <div class="project-image project-image-promo project-image-restaurant rounded-2xl shadow-sm ring-1 ring-slate-900/5 transition-shadow duration-300 group-hover:shadow-xl group-hover:ring-amber-500/20 motion-reduce:transition-none">
+              <img class="transition-transform duration-500 group-hover:scale-[1.035] motion-reduce:transition-none" src="assets/project%20pic/restaurant%20POS.png" alt="Restaurant management app with point-of-sale, inventory, and analytics screens" loading="lazy" decoding="async">
+              <span class="project-index">01</span>
+            </div>
+            <div class="project-copy">
+              <div class="project-title-row"><h3>Restaurant POS App</h3></div>
+              <p>Built a restaurant app that increased user retention by 25% and reduced order processing time by 35% through a more efficient UI and API integration.</p>
+              <ul class="project-tags" aria-label="Technologies"><li>Flutter</li><li>GetX</li><li>SQLite</li><li>API integration</li></ul>
+            </div>
+          </article>
+          <article class="project-card group transition-transform duration-300 hover:-translate-y-1 motion-reduce:transition-none">
+            <div class="project-image project-image-promo project-image-attendance rounded-2xl shadow-sm ring-1 ring-slate-900/5 transition-shadow duration-300 group-hover:shadow-xl group-hover:ring-amber-500/20 motion-reduce:transition-none">
+              <img class="transition-transform duration-500 group-hover:scale-[1.035] motion-reduce:transition-none" src="assets/project%20pic/attendance.png" alt="Attendance management app dashboard and attendance tracking screens" loading="lazy" decoding="async">
+              <span class="project-index">02</span>
+            </div>
+            <div class="project-copy">
+              <div class="project-title-row"><h3>Attendance Management App</h3></div>
+              <p>A Flutter and Firebase attendance solution with real-time tracking, user management, and an analytics dashboard.</p>
+              <ul class="project-tags" aria-label="Technologies"><li>Flutter</li><li>Firebase</li><li>Attendance</li></ul>
+            </div>
+          </article>
+          <article class="project-card group transition-transform duration-300 hover:-translate-y-1 motion-reduce:transition-none">
+            <div class="project-image project-image-promo project-image-deenify rounded-2xl shadow-sm ring-1 ring-slate-900/5 transition-shadow duration-300 group-hover:shadow-xl group-hover:ring-amber-500/20 motion-reduce:transition-none">
+              <img class="transition-transform duration-500 group-hover:scale-[1.035] motion-reduce:transition-none" src="assets/project%20pic/deenify.png" alt="Deenify Islamic lifestyle app with prayer, Quran, Hadith, and tasbih features" loading="lazy" decoding="async">
+              <span class="project-index">03</span>
+            </div>
+            <div class="project-copy">
+              <div class="project-title-row"><h3>Deenify — Daily Deen Companion</h3></div>
+              <p>An Islamic companion app bringing daily worship tools, Quran reading, Hadith, prayer times, and a digital tasbih into one experience.</p>
+              <ul class="project-tags" aria-label="Project type"><li>Mobile app</li><li>Islamic utilities</li><li>Prayer times</li></ul>
+            </div>
+          </article>
+          <article class="project-card group transition-transform duration-300 hover:-translate-y-1 motion-reduce:transition-none">
+            <div class="project-image project-image-promo project-image-recipe rounded-2xl shadow-sm ring-1 ring-slate-900/5 transition-shadow duration-300 group-hover:shadow-xl group-hover:ring-amber-500/20 motion-reduce:transition-none">
+              <img class="transition-transform duration-500 group-hover:scale-[1.035] motion-reduce:transition-none" src="assets/project%20pic/recipe.png" alt="Recipe Book app showing recipe discovery, ingredients, and cooking instructions" loading="lazy" decoding="async">
+              <span class="project-index">04</span>
+            </div>
+            <div class="project-copy">
+              <div class="project-title-row"><h3>Recipe Book</h3></div>
+              <p>A personal cookbook experience for discovering recipes, following clear cooking instructions, and saving favorite meals.</p>
+              <ul class="project-tags" aria-label="Project type"><li>Mobile app</li><li>Recipes</li><li>Cookbook</li></ul>
+            </div>
+          </article>
+          <article class="project-card group transition-transform duration-300 hover:-translate-y-1 motion-reduce:transition-none">
+            <div class="project-image project-image-promo project-image-tasbih rounded-2xl shadow-sm ring-1 ring-slate-900/5 transition-shadow duration-300 group-hover:shadow-xl group-hover:ring-amber-500/20 motion-reduce:transition-none">
+              <img class="transition-transform duration-500 group-hover:scale-[1.035] motion-reduce:transition-none" src="assets/project%20pic/tasbih.png" alt="Tasbih counter app screens for dhikr counting, prayer times, and Hadith" loading="lazy" decoding="async">
+              <span class="project-index">05</span>
+            </div>
+            <div class="project-copy">
+              <div class="project-title-row"><h3>Digital Tasbih &amp; Prayer Companion</h3></div>
+              <p>A focused daily worship companion featuring a digital dhikr counter, prayer-time dashboard, and Hadith collections.</p>
+              <ul class="project-tags" aria-label="Project type"><li>Mobile app</li><li>Tasbih counter</li><li>Prayer times</li></ul>
+            </div>
+          </article>
+          <article class="project-card group transition-transform duration-300 hover:-translate-y-1 motion-reduce:transition-none">
+            <div class="project-image project-image-promo project-image-event-app rounded-2xl shadow-sm ring-1 ring-slate-900/5 transition-shadow duration-300 group-hover:shadow-xl group-hover:ring-amber-500/20 motion-reduce:transition-none">
+              <img class="transition-transform duration-500 group-hover:scale-[1.035] motion-reduce:transition-none" src="assets/project%20pic/event.png" alt="Event booking app with event discovery, seat selection, checkout, and ticket screens" loading="lazy" decoding="async">
+              <span class="project-index">06</span>
+            </div>
+            <div class="project-copy">
+              <div class="project-title-row"><h3>Event Management App</h3></div>
+              <p>Reduced manual coordination by 40% and improved user engagement by 30% with a streamlined event booking experience.</p>
+              <ul class="project-tags" aria-label="Technologies"><li>Flutter</li><li>Firebase</li><li>GetX</li><li>Stripe</li></ul>
+            </div>
+          </article>
+          <article class="project-card group transition-transform duration-300 hover:-translate-y-1 motion-reduce:transition-none">
+            <div class="project-image project-image-promo project-image-pixelyze rounded-2xl shadow-sm ring-1 ring-slate-900/5 transition-shadow duration-300 group-hover:shadow-xl group-hover:ring-amber-500/20 motion-reduce:transition-none">
+              <div class="pixelyze-gallery">
+                <img class="pixelyze-shot pixelyze-shot-primary" src="assets/project%20pic/pixelyze.PNG" alt="Pixelyze About page describing private, browser-based image processing" loading="lazy" decoding="async">
+                <img class="pixelyze-shot pixelyze-shot-secondary" src="assets/project%20pic/pixelyze2.PNG" alt="Pixelyze technical architecture and core values" loading="lazy" decoding="async">
+              </div>
+              <span class="project-index">07</span>
+            </div>
+            <div class="project-copy">
+              <div class="project-title-row"><h3>Pixelyze Image Toolkit</h3></div>
+              <p>A privacy-first image toolkit for compressing, resizing, cropping, and converting images. Files are processed locally in the browser, without uploading them to a server.</p>
+              <ul class="project-tags" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Canvas API</li><li>Client-side</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <svg class="flutter-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M14.314 0L2.3 12 6 15.7 21.684 0zm.008 5.12l-4.63 4.63L13.5 12l4.622-4.63zm-4.622 10.24l4.63 4.63L21.7 12l-4.622-4.63z"
-                            fill="currentColor" />
-                    </svg>
-                    <span>Flutter</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-code"></i>
-                    <span>Dart</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-node-js"></i>
-                    <span>Node.js</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-database"></i>
-                    <span>Firebase</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-cloud"></i>
-                    <span>REST APIs</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-layer-group"></i>
-                    <span>BloC</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-cog"></i>
-                    <span>GetX</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-database"></i>
-                    <span>SQLite</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-git-alt"></i>
-                    <span>Git</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-palette"></i>
-                    <span>UI/UX Design</span>
-                </div>
-            </div>
-        </div>
+    <section class="section section-wrap education-section" id="education" aria-labelledby="education-title">
+      <div class="section-heading">
+        <p class="eyebrow">05 — Education</p>
+        <h2 id="education-title">Learning that<br>keeps moving.</h2>
+      </div>
+      <div class="education-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none">
+        <span class="education-date">Sep 2022 — Mar 2024</span>
+        <h3>Master of Information Technology Management</h3>
+        <p>Major in IT/CS <span aria-hidden="true">·</span> Virtual University of Pakistan</p>
+      </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Portfolio</h2>
-            <p class="section-subtitle">A selection of apps I’ve designed and built using Flutter.</p>
-
-            <div class="portfolio-toolbar">
-                <div class="portfolio-search" role="search">
-                    <i class="fas fa-search" aria-hidden="true"></i>
-                    <input id="portfolioSearch" type="search"
-                        placeholder="Search projects (e.g., booking, Firebase, tracker)" autocomplete="off" />
-                </div>
-                <div class="portfolio-count" id="portfolioCount" aria-live="polite"></div>
-            </div>
-
-            <div class="portfolio-grid" id="portfolioGrid" aria-live="polite"></div>
-            <div class="portfolio-empty" id="portfolioEmpty" hidden>
-                <h3>No projects found</h3>
-                <p>Try a different keyword.</p>
-            </div>
-            <div class="portfolio-note" id="portfolioNote" hidden></div>
+    <section class="section section-tint certifications-section" id="certifications" aria-labelledby="certifications-title">
+      <div class="section-wrap">
+        <div class="section-heading section-heading-row">
+          <div><p class="eyebrow">06 — Learning &amp; recognition</p><h2 id="certifications-title">Credentials earned.</h2></div>
+          <p class="section-aside">A collection of training, course completions, and professional experience certificates.</p>
         </div>
+        <div class="certifications-grid">
+          <article class="certificate-card group transition-transform duration-300 hover:-translate-y-1 motion-reduce:transition-none">
+            <a class="certificate-image group/certificate" href="assets/certifications/certificate-1755160756527.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open Flutter REST APIs Tutorials Crash Course certificate">
+              <img src="assets/certifications/certificate-1755160756527.jpg" alt="Flutter REST APIs Tutorials Crash Course certificate from LearnOnline.pk" loading="lazy" decoding="async">
+              <span class="certificate-open" aria-hidden="true">View ↗</span>
+            </a>
+            <div class="certificate-copy"><span class="certificate-type">Course certificate</span><h3>Flutter REST APIs Crash Course</h3><p>LearnOnline.pk <span aria-hidden="true">·</span> August 14, 2025</p></div>
+          </article>
+          <article class="certificate-card group transition-transform duration-300 hover:-translate-y-1 motion-reduce:transition-none">
+            <a class="certificate-image group/certificate" href="assets/certifications/Devtricode%20Experience%20Certificate%202024.png" target="_blank" rel="noopener noreferrer" aria-label="Open Devtricode Flutter Developer Internship certificate">
+              <img src="assets/certifications/Devtricode%20Experience%20Certificate%202024.png" alt="Devtricode experience certificate for a Flutter Developer Internship, September through December 2024" loading="lazy" decoding="async">
+              <span class="certificate-open" aria-hidden="true">View ↗</span>
+            </a>
+            <div class="certificate-copy"><span class="certificate-type">Experience certificate</span><h3>Flutter Developer Internship</h3><p>Devtricode <span aria-hidden="true">·</span> Sep 2024–Dec 2024</p></div>
+          </article>
+          <article class="certificate-card group transition-transform duration-300 hover:-translate-y-1 motion-reduce:transition-none">
+            <a class="certificate-image group/certificate" href="assets/certifications/ff.PNG" target="_blank" rel="noopener noreferrer" aria-label="Open Flutter Apps Web, Mobile and Desktop certificate">
+              <img src="assets/certifications/ff.PNG" alt="Certificate of completion for Flutter Apps covering web, mobile, and desktop apps" loading="lazy" decoding="async">
+              <span class="certificate-open" aria-hidden="true">View ↗</span>
+            </a>
+            <div class="certificate-copy"><span class="certificate-type">Course certificate</span><h3>Flutter Apps: Web, Mobile &amp; Desktop</h3><p>Certificate of completion <span aria-hidden="true">·</span> January 15, 2025</p></div>
+          </article>
+          <article class="certificate-card group transition-transform duration-300 hover:-translate-y-1 motion-reduce:transition-none">
+            <a class="certificate-image group/certificate" href="assets/certifications/codifying-cert.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open Codifying Tech Flutter Developer experience letter">
+              <img src="assets/certifications/codifying-cert.jpg" alt="Codifying Tech Flutter Developer experience letter, January through August 2025" loading="lazy" decoding="async">
+              <span class="certificate-open" aria-hidden="true">View ↗</span>
+            </a>
+            <div class="certificate-copy"><span class="certificate-type">Experience letter</span><h3>Flutter Developer — Contract</h3><p>Codifying Tech <span aria-hidden="true">·</span> Jan 2025–Aug 2025</p></div>
+          </article>
+          <article class="certificate-card group transition-transform duration-300 hover:-translate-y-1 motion-reduce:transition-none">
+            <a class="certificate-image group/certificate" href="assets/certifications/Software_engineering.PNG" target="_blank" rel="noopener noreferrer" aria-label="Open Saylor Academy Software Engineering certificate">
+              <img src="assets/certifications/Software_engineering.PNG" alt="Saylor Academy CS302 Software Engineering certificate" loading="lazy" decoding="async">
+              <span class="certificate-open" aria-hidden="true">View ↗</span>
+            </a>
+            <div class="certificate-copy"><span class="certificate-type">Course certificate</span><h3>Software Engineering</h3><p>Saylor Academy <span aria-hidden="true">·</span> January 3, 2026</p></div>
+          </article>
+          <article class="certificate-card group transition-transform duration-300 hover:-translate-y-1 motion-reduce:transition-none">
+            <a class="certificate-image group/certificate" href="assets/certifications/uiux.PNG" target="_blank" rel="noopener noreferrer" aria-label="Open DigiSkills UI/UX and Webflow training certificate">
+              <img src="assets/certifications/uiux.PNG" alt="DigiSkills Training Certificate for UI/UX and Webflow" loading="lazy" decoding="async">
+              <span class="certificate-open" aria-hidden="true">View ↗</span>
+            </a>
+            <div class="certificate-copy"><span class="certificate-type">Training certificate</span><h3>UI/UX &amp; Webflow</h3><p>DigiSkills Training Program <span aria-hidden="true">·</span> July 20, 2026</p></div>
+          </article>
+          <article class="certificate-card group transition-transform duration-300 hover:-translate-y-1 motion-reduce:transition-none">
+            <a class="certificate-image group/certificate" href="assets/certifications/wh_cert.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open WholeCure Technologies Flutter Developer experience certificate">
+              <img src="assets/certifications/wh_cert.jpg" alt="WholeCure Technologies Flutter Developer experience certificate, October 2025 through July 2026" loading="lazy" decoding="async">
+              <span class="certificate-open" aria-hidden="true">View ↗</span>
+            </a>
+            <div class="certificate-copy"><span class="certificate-type">Experience certificate</span><h3>Flutter Developer</h3><p>WholeCure Technologies <span aria-hidden="true">·</span> Oct 2025–Jul 2026</p></div>
+          </article>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <a href="mailto:laraibazhar107@gmail.com">laraibazhar107@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Location</h3>
-                            <span>Rawalpindi, Pakistan</span>
-                        </div>
-                    </div>
-                    <div class="contact-social">
-                        <a href="https://www.github.com/Guriya000" target="_blank" rel="noopener noreferrer"
-                            class="contact-social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/laraib-malik-020052322" target="_blank"
-                            rel="noopener noreferrer" class="contact-social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Laraib Azhar. All rights reserved.</p>
-            <p>Flutter Developer | Building Amazing Mobile Experiences</p>
-        </div>
-    </footer>
-
-    <!-- Portfolio Modal -->
-    <div class="portfolio-modal" id="portfolioModal" aria-hidden="true">
-        <div class="portfolio-modal__backdrop" data-portfolio-close="true"></div>
-        <div class="portfolio-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="portfolioModalTitle">
-            <button class="portfolio-modal__close" type="button" aria-label="Close" data-portfolio-close="true">
-                <i class="fas fa-times" aria-hidden="true"></i>
-            </button>
-
-            <div class="portfolio-modal__media">
-                <button class="portfolio-modal__nav portfolio-modal__nav--prev" type="button"
-                    aria-label="Previous image">
-                    <i class="fas fa-chevron-left" aria-hidden="true"></i>
-                </button>
-                <img class="portfolio-modal__image" id="portfolioModalImage" alt="" />
-                <button class="portfolio-modal__nav portfolio-modal__nav--next" type="button" aria-label="Next image">
-                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
-                </button>
-            </div>
-
-            <div class="portfolio-modal__thumbs" id="portfolioModalThumbs" aria-label="Project images"></div>
-
-            <div class="portfolio-modal__content">
-                <h3 class="portfolio-modal__title" id="portfolioModalTitle"></h3>
-                <div class="portfolio-modal__desc" id="portfolioModalDesc"></div>
-            </div>
-        </div>
+  <footer class="contact-section" id="contact" aria-labelledby="contact-title">
+    <div class="section-wrap contact-inner">
+      <p class="eyebrow">07 — Get in touch</p>
+      <h2 id="contact-title">Have a good idea?<br><span>Let’s make it real.</span></h2>
+      <a class="contact-email transition-colors duration-200 hover:text-amber-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-600 motion-reduce:transition-none" href="mailto:laraibazhar107@gmail.com">laraibazhar107@gmail.com <span aria-hidden="true">↗</span></a>
+      <div class="contact-details">
+        <span>Rawalpindi, Punjab, Pakistan</span>
+        <span class="contact-socials">
+          <a class="inline-flex transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-600 motion-reduce:transition-none" href="https://github.com/Guriya000" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a class="inline-flex transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-600 motion-reduce:transition-none" href="https://www.linkedin.com/in/laraib-malik-020052322" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+        </span>
+      </div>
     </div>
-
-    <script src="script.js"></script>
+  </footer>
 </body>
-
 </html>
